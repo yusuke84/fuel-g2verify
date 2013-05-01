@@ -46,9 +46,9 @@ NOTE: if you will be add initial_key, you will be overwrite $secret param on eac
 
 ### G2verify::getSecret()
 
-Get the Secret key at Base32 string.
-This key will be used other methods.
-Save secret key the database for each user.
+Get the Secret key at Base32 string.  
+This key will be used other methods.  
+Save secret key the database for each user.  
 
 ```php
 $secretkey = G2verify::getSecret();
@@ -56,9 +56,9 @@ $secretkey = G2verify::getSecret();
 
 ### G2verify::getQRcodeurl($username,$secret = null)
 
-Generate QR code for Google Authenticator.
-$username will be used in the Google Authenticator for identify.
-Use the Google Chart API to generate a QR Code.
+Generate QR code for Google Authenticator.  
+$username will be used in the Google Authenticator for identify.  
+Use the Google Chart API to generate a QR Code.  
 
 ```php
 $secretkey = 'ABCDEFGHIJKLNMOP'; //each user different.

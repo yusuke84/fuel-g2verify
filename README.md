@@ -56,8 +56,8 @@ $secretkey = G2verify::getSecret();
 
 ### G2verify::getQRcodeurl($username,$secret = null)
 
-Generate QR code for Google Authenticator.  
-$username will be used in the Google Authenticator for identify.  
+Generate QR code for [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2).  
+$username will be used in [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2) for identify.  
 Use the Google Chart API to generate a QR Code.  
 
 ```php

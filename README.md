@@ -51,9 +51,7 @@ This key will be used other methods.
 Save secret key the database for each user.
 
 ```php
-
-$secretkey = $G2verify::getSecret();
-
+$secretkey = G2verify::getSecret();
 ```
 
 ### G2verify::getQRcodeurl($username,$secret = null)
@@ -63,13 +61,11 @@ $username will be used in the Google Authenticator for identify.
 Use the Google Chart API to generate a QR Code.
 
 ```php
-
 $secretkey = 'ABCDEFGHIJKLNMOP'; //each user different.
 $qrcodeurl = G2verify::getQRcodeurl('username',$secretkey);
 
 //View QR code
 echo("<iframe src=$qrcodeurl height=200 width=200></iframe>");
-
 ```
 
 ### G2verify::verify($key,$secret = null)
@@ -77,7 +73,6 @@ echo("<iframe src=$qrcodeurl height=200 width=200></iframe>");
 Check the validity of one-time password after user authentication is successful.
 
 ```php
-
 $inputotp = '123456'; //user input data.
 $secret = 'ABCDEFGHIJKLNMOP'; //each user different.
 $result = G2verify::verify($inputotp,$secret);
@@ -87,7 +82,6 @@ if($result){
 }else{
   echo('NG');
 }
-
 ```
 
 ### G2verify::getOTP($key,$secret = null)
@@ -95,10 +89,8 @@ if($result){
 Get a one-time password.
 
 ```php
-
 $secret = 'ABCDEFGHIJKLNMOP';
 $otp = G2verify::getOTP($secret);
-
 ```
 
 ## Licence
